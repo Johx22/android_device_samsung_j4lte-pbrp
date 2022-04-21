@@ -1,4 +1,4 @@
-# Pitch Black Recovery Project device tree for Samsung Galaxy J4(SM-J400;j4lte)
+# Pitch Black Recovery Project device tree for Samsung Galaxy J4(SM-J400;j4lte)|Unofficial
 
 ## How to Build:
 
