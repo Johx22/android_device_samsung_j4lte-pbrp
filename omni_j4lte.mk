@@ -16,8 +16,9 @@
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from our custom product configuration
+# Inherit PBRP stuff
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier

@@ -15,6 +15,9 @@
 #
 LOCAL_PATH := device/samsung/j4lte
 
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Platform
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
@@ -52,6 +55,8 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25113120
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+TARGET_COPY_OUT_VENDOR := vendor
+
 # Display
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
@@ -69,5 +74,5 @@ TW_EXTRA_LANGUAGES := true
 TW_EXCLUDE_SUPERSU := true
 
 #PBRP flags
-PB_TORCH_PATH := /sys/devices/virtual/camera/flash/rear_flash
+PB_TORCH_PATH := "/sys/devices/virtual/camera/flash/rear_flash"
 PB_TORCH_MAX_BRIGHTNESS := 1
